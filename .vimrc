@@ -54,6 +54,7 @@ map <F4> :set spell spelllang=en_us
 map <F3> :set nospell
 
 cmap w!! w !sudo tee > /dev/null %
+set clipboard+=unnamed
 
 "Pymode settings
 let g:pymode_lint_ignore = "E501"
