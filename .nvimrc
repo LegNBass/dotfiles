@@ -70,8 +70,7 @@ cmap w!! w !sudo tee > /dev/null %
 set clipboard+=unnamed
 
 "Pymode settings
-let g:pymode_lint_ignore = "E501"
-let g:pymode_lint_ignore = "E731"
+let g:pymode_lint_ignore = "E501,E731"
 let g:pymode_python = "python3"
 
 filetype plugin indent on
