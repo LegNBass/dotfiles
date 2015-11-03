@@ -16,8 +16,6 @@ Bundle 'gmarik/Vundle.vim'
 Bundle 'klen/python-mode'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'flazz/vim-colorschemes'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'hynek/vim-python-pep8-indent'
 if iCanHazVundle == 0
     echo "Installing Bundles..."
     echo ""
@@ -70,7 +68,8 @@ cmap w!! w !sudo tee > /dev/null %
 set clipboard+=unnamed
 
 "Pymode settings
-let g:pymode_lint_ignore = "E501,E731"
+let g:pymode_lint_ignore = "E501,E731,W391,W503"
 let g:pymode_python = "python3"
+let g:pymode_debug = 1
 
 filetype plugin indent on
